@@ -1,15 +1,35 @@
 # Un-analisi-del-rischio-di-default-delle-imprese-italiane
-# Corporate Default Prediction: Logit vs XGBoost
-
 This repository contains the Python code used for the empirical analysis
-of my Master's thesis.
+developed in the Master's thesis:
+
+"Un analisi del rischio di default delle imprese italiane"
 
 ## Repository structure
 
-- 01_data_preparation.ipynb: dataset construction and preprocessing
-- 02_empirical_analysis.ipynb: Logit, Lasso, Ridge, XGBoost, AUROC and SHAP analysis
+### 01_data_preparation.ipynb
+Contains the procedures used to construct the final dataset:
+- sample selection
+- definition of default events
+- t-3 matching
+- missing value treatment
+- winsorization
+- logarithmic transformations
+- categorical encoding
+- final dataset construction
+
+### 02_empirical_analysis.ipynb
+Contains the empirical analysis:
+- Logistic Regression
+- Lasso and Ridge Logistic Regression
+- XGBoost
+- ROC and AUROC
+- Youden Index
+- confusion matrices
+- performance metrics
+- SHAP values
+- SHAP interaction values
 
 ## Data availability
 
-The dataset was obtained from AIDA – Bureau van Dijk and is not included
-due to licensing restrictions.
+The dataset used in the analysis was obtained from AIDA – Bureau van Dijk.
+Due to licensing restrictions, the underlying data are not included in this repository.
